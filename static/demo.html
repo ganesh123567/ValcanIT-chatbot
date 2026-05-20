@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ValcanIT Chatbot Demo</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #1f2933;
+        background: #f6f8fb;
+      }
+      main {
+        width: min(920px, calc(100% - 32px));
+        margin: 64px auto;
+      }
+      h1 {
+        margin: 0 0 12px;
+        font-size: 34px;
+        line-height: 1.2;
+      }
+      p {
+        max-width: 680px;
+        font-size: 16px;
+        line-height: 1.6;
+      }
+      code {
+        padding: 2px 5px;
+        border-radius: 4px;
+        background: #e8edf3;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>ValcanIT Chatbot Demo</h1>
+      <p>
+        Use the chat button in the bottom-right corner to test the widget.
+        Ollama must be installed and running at <code>http://localhost:11434</code>
+        for live answers.
+      </p>
+    </main>
+    <script src="/widget.js" data-api-url="/api/chat" defer></script>
+  </body>
+</html>
