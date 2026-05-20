@@ -8,6 +8,12 @@ For a detailed explanation of the current chatbot architecture, request flow, RA
 docs/CHATBOT_OVERVIEW.md
 ```
 
+For the next-version LangChain + FAISS/vector database plan, see:
+
+```text
+docs/LANGCHAIN_FAISS_NEXT_VERSION.md
+```
+
 ## Local setup
 
 1. Install and start Ollama.

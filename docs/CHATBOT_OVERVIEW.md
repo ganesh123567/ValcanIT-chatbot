@@ -319,6 +319,12 @@ The current version supports:
 
 ## Advanced Features Roadmap
 
+For a dedicated plan for LangChain, FAISS, and vector database upgrades, see:
+
+```text
+docs/LANGCHAIN_FAISS_NEXT_VERSION.md
+```
+
 ### Phase 1: Production Hardening
 
 - Add Nginx or AWS Application Load Balancer in front of FastAPI.
