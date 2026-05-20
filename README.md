@@ -2,6 +2,12 @@
 
 Small FastAPI service that exposes an Ollama-backed chatbot API and a JavaScript widget you can embed on `valcanit.com`.
 
+For a detailed explanation of the current chatbot architecture, request flow, RAG behavior, and future roadmap, see:
+
+```text
+docs/CHATBOT_OVERVIEW.md
+```
+
 ## Local setup
 
 1. Install and start Ollama.
