@@ -32,6 +32,33 @@ Small FastAPI service that exposes an Ollama-backed chatbot API and a JavaScript
      -d '{"message":"What services does ValcanIT provide?"}'
    ```
 
+## API Verification
+
+The service currently exposes 4 application endpoints:
+
+- `GET /health`: API health and configured model names
+- `GET /`: local chatbot demo page
+- `GET /widget.js`: embeddable website widget JavaScript
+- `POST /api/chat`: chatbot question endpoint
+
+Swagger UI is available at:
+
+```text
+http://127.0.0.1:8000/docs
+```
+
+ReDoc is available at:
+
+```text
+http://127.0.0.1:8000/redoc
+```
+
+OpenAPI JSON is available at:
+
+```text
+http://127.0.0.1:8000/openapi.json
+```
+
 ## Website embed
 
 After deploying this FastAPI app, add this script to the WordPress site footer:
