@@ -1,4 +1,5 @@
 .env
+infra/env/ec2.env
 .venv/
 __pycache__/
 *.py[cod]

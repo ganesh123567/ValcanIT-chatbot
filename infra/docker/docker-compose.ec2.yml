@@ -1,0 +1,30 @@
+name: valcanit-chatbot
+
+services:
+  ollama:
+    image: ollama/ollama:latest
+    container_name: valcanit-ollama
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:11434:11434"
+    volumes:
+      - ollama-data:/root/.ollama
+
+  api:
+    build:
+      context: ../..
+      dockerfile: infra/docker/Dockerfile
+    image: valcanit-chatbot-api:latest
+    container_name: valcanit-chatbot-api
+    restart: unless-stopped
+    depends_on:
+      - ollama
+    env_file:
+      - ../env/ec2.env
+    ports:
+      - "8000:8000"
+    volumes:
+      - ../../data:/app/data
+
+volumes:
+  ollama-data:

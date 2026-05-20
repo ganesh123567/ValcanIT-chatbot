@@ -66,6 +66,16 @@ Runtime settings are loaded from `.env`. Keep `.env` private and use `.env.examp
 Update `data/valcanit_knowledge.json` when services, contact details, or website content changes.
 For facts like founder, CEO, head of company, leadership, prices, or hiring details, add a verified entry to the knowledge file first. The chatbot is configured to avoid inventing those answers when the fact is missing.
 
+## EC2 Container Deployment
+
+Infrastructure files for AWS EC2 container deployment live in `infra/`.
+
+Start with:
+
+```bash
+cat infra/README.md
+```
+
 ## Add RAG Facts
 
 RAG does not train the model weights. It adds verified facts to the knowledge base that the model receives with each question.
